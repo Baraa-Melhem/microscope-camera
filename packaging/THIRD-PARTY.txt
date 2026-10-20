@@ -1,0 +1,16 @@
+Microscope Camera includes the following third-party software:
+
+libusb-win32 1.4.0 (driver libusb0.sys, library libusb0.dll)
+  Kernel driver: GNU GPL v3; library: GNU LGPL v3.
+  Source: https://github.com/mcuee/libusb-win32
+
+Qt 6 / PySide6 (Qt for Python) - GNU LGPL v3. https://www.qt.io/qt-for-python
+OpenCV - Apache License 2.0. https://opencv.org
+NumPy - BSD 3-Clause. https://numpy.org
+Python - Python Software Foundation License. https://www.python.org
+Executable packaging by PyInstaller; installer by Inno Setup.
+
+The USB driver package is signed with a self-signed certificate that was generated
+for this package; its private key was deleted immediately after signing, so it cannot
+be used to sign anything else. Setup adds it to the machine's trusted stores so that
+Windows accepts the driver; uninstalling removes it again.

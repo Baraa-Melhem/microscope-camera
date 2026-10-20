@@ -1,0 +1,41 @@
+MICROSCOPE CAMERA - user guide
+==============================
+
+For the HDCE-10A microscope digital camera (USB, "Huaqi Digital", eMPIA EM2750).
+Works on 64-bit Windows 10 and 11. The camera's original CD software cannot work
+on these systems (its driver is 32-bit only); this program replaces it.
+
+INSTALL
+  1. Run MicroscopeCamera-Setup-x.y.z.exe.
+     Windows may say "Windows protected your PC" because the installer isn't
+     commercially signed: click "More info" -> "Run anyway".
+  2. Accept the administrator prompt (needed to install the USB driver).
+  3. Plug in the camera (any USB port; not through a hub if possible).
+  4. Start "Microscope Camera" from the desktop or Start menu.
+
+USING IT
+  Space        take a snapshot (PNG / TIFF / JPG)
+  R            start / stop video recording (MP4)
+  W            auto white balance - point at an empty, evenly lit field first
+  F11          full screen
+  Mouse wheel  zoom, drag to pan, double-click to fit
+
+  Exposure is automatic by default; untick "Automatic" to set time and gain by hand.
+  Pictures and videos are saved to "Microscope Captures" on your Desktop
+  ("Change folder..." to pick another one).
+
+TROUBLESHOOTING
+  "Camera not found"
+     - Check the cable; unplug and re-plug the camera.
+     - Start menu -> Microscope Camera -> "Repair camera driver".
+     - Device Manager should list "HDCE-10A Microscope Camera" under
+       "libusb-win32 devices".
+  Picture breaks up / freezes
+     - Set Speed to "Safe - 8 fps" and plug directly into the computer.
+  Cannot save pictures
+     - Windows "Controlled folder access" can block saving into Documents/Pictures.
+       Choose another folder, or allow MicroscopeCamera.exe in Windows Security.
+
+UNINSTALL
+  Settings -> Apps -> Microscope Camera -> Uninstall. This also removes the
+  USB driver and its certificate.
